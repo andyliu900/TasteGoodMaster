@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/cartListViewLayout"
+        layout="@layout/common_recyclerviewlist_layout"/>
+
+    <LinearLayout
+        android:id="@+id/allPrintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/linedivider_layout"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/all_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_checkbox_n"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选"
+                android:textSize="16sp"
+                android:textColor="@color/primaryTextColor"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/all_checkbox"/>
+
+            <Button
+                android:id="@+id/allPrintBtn"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="打印"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

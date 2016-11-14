@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+
+    <include
+        android:id="@+id/line"
+        layout="@layout/linedivider_layout"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@color/mainBottomBg"
+        android:orientation="horizontal"
+        android:layout_below="@id/line">
+
+        <Button
+            android:id="@+id/main_waithandle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/main_waithandler_bg"
+            android:drawablePadding="5dp"
+            android:text="@string/main_waithandle"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/main_waitdistribute"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/main_waitdistribute_bg"
+            android:drawablePadding="5dp"
+            android:text="@string/main_waitdistribute"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/main_billmanage"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/main_billmanage_bg"
+            android:drawablePadding="5dp"
+            android:text="@string/main_billmanage"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/navHeaderBg">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="店铺名称"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:gravity="right"
+            android:maxEms="7"
+            android:maxLines="1"
+            android:textSize="17sp"
+            android:textColor="@color/secondTextColor"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/distribute_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停配送"
+            android:textSize="17sp"
+            android:textColor="@color/secondTextColor"
+            android:layout_centerVertical="true"/>
+
+        <Switch
+            android:id="@+id/distribute_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/line1"
+        android:layout_below="@id/distribute_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        layout="@layout/linedivider_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/bluetoothsetting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝牙设置"
+            android:textSize="17sp"
+            android:textColor="@color/secondTextColor"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/ic_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_s_arrow_gary"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/bluetooth_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteGray"
+            android:text="蓝牙已打开"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ic_arrow"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <include
+        android:layout_below="@id/bluetoothsetting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        layout="@layout/linedivider_layout"/>
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/navHeaderBg"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
